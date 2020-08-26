@@ -164,9 +164,9 @@ def menu():
     is_settings, is_info = False, False
 
     github_icon, twitter_icon, discord_icon = github_icon_normal, twitter_icon_normal, discord_icon_normal
-    github_icon_x, github_icon_y = 40, 900
-    twitter_icon_x, twitter_icon_y = 240, 930
-    discord_icon_x, discord_icon_y = 405, 920
+    github_icon_x, github_icon_y = screenwidth-screenwidth+40, screenheight-180
+    twitter_icon_x, twitter_icon_y = screenwidth-screenwidth+240, screenheight-150
+    discord_icon_x, discord_icon_y = screenwidth-screenwidth+405, screenheight-160
 
     # Checks if the current screen is menu
     while screen == "menu":
@@ -206,7 +206,7 @@ def menu():
             text_rect = text.get_rect(center=(round(screenwidth / 2), 50))
             win.blit(text, text_rect)
 
-            draw_text2("V1.232", pygame.font.SysFont('main_menu_font.ttf', 30), (255,255,255), win, 1860, 1060)
+            draw_text2("V1.233", pygame.font.SysFont('main_menu_font.ttf', 30), (255,255,255), win, 1860, 1060)
 
             # Draws photos
             win.blit(github_icon, (github_icon_x, github_icon_y))
@@ -243,9 +243,9 @@ def menu():
                     elif stop_button.isOver(pos):
                         quit()
 
-                    elif isOver(40, 900, 170, 170, pos): webbrowser.open("https://github.com/FirePlank", autoraise=True)
-                    elif isOver(240, 930, 130, 106, pos): webbrowser.open("https://twitter.com/FirePlank", autoraise=True)
-                    elif isOver(405, 920, 130, 130, pos): webbrowser.open("https://discord.gg/K2Cf6ma", autoraise=True)
+                    elif isOver(screenwidth-screenwidth+40, screenheight-180, 170, 170, pos): webbrowser.open("https://github.com/FirePlank", autoraise=True)
+                    elif isOver(screenwidth-screenwidth+240, screenheight-150, 130, 106, pos): webbrowser.open("https://twitter.com/FirePlank", autoraise=True)
+                    elif isOver(screenwidth-screenwidth+405, screenheight-160, 130, 130, pos): webbrowser.open("https://discord.gg/K2Cf6ma", autoraise=True)
 
 
                 # Checks for mose movement
@@ -262,12 +262,12 @@ def menu():
                     if info_button.isOver(pos): info_button_opacity = 25
                     else: info_button_opacity = 0
 
-                    if isOver(40, 900, 170, 170, pos): github_icon, github_icon_x, github_icon_y = github_icon_big, 20, 880
-                    else: github_icon, github_icon_x, github_icon_y = github_icon_normal, 40, 900
-                    if isOver(240, 930, 130, 106, pos): twitter_icon, twitter_icon_x, twitter_icon_y = twitter_icon_big, 220, 916
-                    else: twitter_icon, twitter_icon_x, twitter_icon_y = twitter_icon_normal, 240, 930
-                    if isOver(405, 920, 130, 130, pos): discord_icon, discord_icon_x, discord_icon_y = discord_icon_big, 385, 900
-                    else: discord_icon, discord_icon_x, discord_icon_y = discord_icon_normal, 405, 920
+                    if isOver(screenwidth-screenwidth+40, screenheight-180, 170, 170, pos): github_icon, github_icon_x, github_icon_y = github_icon_big, screenwidth-screenwidth+20, screenheight-(screenheight-880)
+                    else: github_icon, github_icon_x, github_icon_y = github_icon_normal, screenwidth-screenwidth+40, screenheight-180
+                    if isOver(screenwidth-screenwidth+240, screenheight-150, 130, 106, pos): twitter_icon, twitter_icon_x, twitter_icon_y = twitter_icon_big, screenwidth-screenwidth+220, screenheight-(screenheight-916)
+                    else: twitter_icon, twitter_icon_x, twitter_icon_y = twitter_icon_normal, screenwidth-screenwidth+240, screenheight-150
+                    if isOver(screenwidth-screenwidth+405, screenheight-160, 130, 130, pos): discord_icon, discord_icon_x, discord_icon_y = discord_icon_big, screenwidth-screenwidth+385, screenheight-(screenheight-900)
+                    else: discord_icon, discord_icon_x, discord_icon_y = discord_icon_normal, screenwidth-screenwidth+405, screenheight-160
 
         # Checks if current screen is settings
         elif is_settings:
@@ -435,8 +435,8 @@ def menu():
             draw_text2("I know this project is not the most advanced but I sure had fun making this!", pygame.font.Font("main_menu_font.ttf", 50), (255, 255, 255), win, round(screenwidth / 2), 330)
             draw_text2("This app basically generates abstract art if you", pygame.font.Font("main_menu_font.ttf", 50), (255, 255, 255), win, round(screenwidth / 2), 430)
             draw_text2("didn't pick it up from the name already.", pygame.font.Font("main_menu_font.ttf", 50), (255, 255, 255), win, round(screenwidth / 2), 500)
-            draw_text2("This apps basically runs with any screen resolution", pygame.font.Font("main_menu_font.ttf", 50), (255, 255, 255), win, round(screenwidth / 2), 600)
-            draw_text2("but 1920x1080 is recommended.", pygame.font.Font("main_menu_font.ttf", 50), (255, 255, 255), win, round(screenwidth / 2), 670)
+            draw_text2("This apps basically runs ony with 1920x1080 screen resolution", pygame.font.Font("main_menu_font.ttf", 50), (255, 255, 255), win, round(screenwidth / 2), 600)
+            draw_text2("because you can't see half the buttons if not XD", pygame.font.Font("main_menu_font.ttf", 50), (255, 255, 255), win, round(screenwidth / 2), 670)
             draw_text2("With Love, FirePlank", pygame.font.Font("main_menu_font.ttf", 50), (255, 255, 255), win, round(screenwidth / 2), 820)
 
             back_button = Button(color, (screenwidth / 2) - 100, 900, 200, 100, stop_button_opacity, "Back")
