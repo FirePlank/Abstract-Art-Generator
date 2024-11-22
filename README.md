@@ -1,26 +1,53 @@
-# Abstract-Art-Generator
-***An app that generates abstract art for you***
+# Abstract Art Generator
 
+**An application that creates unique abstract art with customizable settings.**  
 
+---
 
-So project was made part of a one month jam! It was really intresting and fun to do.
+### About This Project  
 
-Note: **This app ONLY works with 1920x1080 screen resolution or above** cuz I realised too late that the buttons won't show otherwise
-Adding support is a very tidious process and I didn't have time until the jam ended ):
-If anyone wants to add support to diffrent screen resolutions then I would be forever grateful but that is entirely optional.
+This project was developed as part of a one-month programming jam. While it's an older project, it showcases a range of fun features and experimental design concepts.  
 
-## Setup
-Do "pip install -r requirements.txt" on cmd in this folder and then just run the program by doing 'python "Abstract Art Generator.py"'! Remember the quotes!
+> **Note:** This application is optimized for screen resolutions of **1920x1080 or higher**. Unfortunately, support for lower resolutions was not implemented due to time constraints during the jam. If you'd like to add compatibility for other resolutions, it would be highly appreciated, but this is completely optional.  
 
-## Usage and Features
-You can change various generation options within the settings like the amount to gen or what diffrent shapes to gen.
-You can also choose from an more adnvanced generator and a more basic one depending on your hardware.
-You can also save the beutiful art to your pc if you so choose straight from within the app!
-You can also read the info tab within the app for even more info.
+---
 
-There is also lots of other minor stuff that I did not mention here so be sure to check the project out for yourself!
+### Setup Instructions  
 
-## Conclusion
-I hope you like my project and  thanks!
+To get started, follow these steps:  
+1. Open a terminal and navigate to the project's folder.  
+2. Run the command:  
+   ```bash
+   pip install -r requirements.txt
+   ```  
+3. Start the application by running:  
+   ```bash
+   python "Abstract Art Generator.py"
+   ```  
+   Be sure to include the quotes as shown above!  
 
-Ps: My code is really meassy but please don't let it bother you too much! Feedback is greatly appriciated. God, I feel so naked like this...
+---
+
+### Features  
+
+This application offers a variety of features for creating and customizing abstract art:  
+
+- **Customizable Settings:** Adjust generation parameters, such as the number and types of shapes to include.  
+- **Basic and Advanced Generators:** Choose between two modes depending on your hardware's capabilities.  
+- **Save Your Artwork:** Export your creations directly to your computer.  
+- **In-App Information:** Access additional guidance and tips through the app's built-in info tab.  
+
+While there are more minor features and surprises to discover, the best way to explore them is by diving into the project yourself!  
+
+---
+
+### Additional Notes  
+
+- **Code Quality:** This was a rapid development project, so the code might feel a little messy. Please don’t let that detract from your experience!  
+- **Feedback Welcome:** Your thoughts, suggestions, or even contributions to the code are always appreciated.  
+
+---
+
+### Conclusion  
+
+I hope you enjoy exploring and using this project as much as I enjoyed creating it. Thank you for taking the time to check it out!  
